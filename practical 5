@@ -1,0 +1,80 @@
+print("Binary Search Tree")
+n=int(input("No. of elements: "))
+
+#Maximum height = h = n - 1
+
+#Therefore array size should be 2 ^ (h + 1) - 1
+
+h = n - 1
+
+t=1]
+
+arr size = (2 ^ (h + 1)) - 1
+
+for i in range(arr_size):
+
+t.append(0)
+
+print("Enter the element: ")
+
+for i in range(n):
+
+print ( i + 1 end="")
+
+x=int (input())
+
+if i== 0:
+t[i]=x
+
+else:
+root=0
+while t[root]!=0:
+if x<t [root]:
+root=(2*root) +1
+elseif x>=t[root]:
+root=(2*root)+2
+t[root]=x
+
+print("Parent\tleft\tRight")
+
+#Parent-k, Left-2k+1, Right = 2k + 2
+for i in range(arr_size//2):
+
+if t[i]>0:
+print (t[i],"\t", t[ (2i) + 1 ] "\t", t[ (2i) + 2 ])
+
+
+
+
+
+
+
+
+print("Binary Tree")
+
+h=int (input("Height of the tree: "))
+
+n=(2** (h+1))-1
+print("No. of nodes ",n)
+
+t=[]
+
+print("Enter the array: ")
+for i in range (n):
+
+print(i,".", end="")
+
+x=input()
+
+t.append(x)
+
+print("Parent\tLeft\tRight")
+
+#Parent-k, Left=2k+1, Right=2k+2
+
+for i in range (n//2):
+print(i,".", end="")
+
+print (t[i], "\t",t[(2*i)+1],"\t", t[(2*i)+2])
+
+print()
